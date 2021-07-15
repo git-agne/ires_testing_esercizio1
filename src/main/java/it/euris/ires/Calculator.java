@@ -6,22 +6,16 @@ public class Calculator {
 		return a + b;
 	}
 
-	public static void main(String[] args) {
-
-		// Precondizione: classe Calculator dev'essere istanziata
-		Calculator c = new Calculator();
-
-		// Semplice test
-		int result = c.add(1,1); // SUT
-
-		// Postcondizione: risultato atteso
-		if(result == 2) {
-			System.out.println("CORRETTO");
-		}
+	public int sub(int a, int b) {
+		return a - b;
 	}
-	// Si può fare test parametrico:
-	void addTest(int a, int b, int c) {
-		// int c è il risultato atteso
+
+	public int mult(int a, int b) {
+		return a * b;
+	}
+
+	public int div(int a, int b) {
+		return a / b;
 	}
 }
 // SUT: metodo add()
